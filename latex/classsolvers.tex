@@ -1,0 +1,177 @@
+\hypertarget{classsolvers}{\section{solvers \-Module \-Reference}
+\label{classsolvers}\index{solvers@{solvers}}
+}
+
+
+resice soustav  
+
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, public \hyperlink{classsolvers_ac4fcdb5ec5f18bb84b27408c36aafc21}{jacobi} (a, b, x, maxit, reps, it, repsfin, l1, l2, countop, ilev)
+\begin{DoxyCompactList}\small\item\em \-Jacobiova metoda. \end{DoxyCompactList}\item 
+subroutine, public \hyperlink{classsolvers_ac87ce7bf939f58b74022c83ebf735650}{\-L\-D\-U} (\-A, \-L\-U, info, pivtype, ilev, perm1, perm2)
+\begin{DoxyCompactList}\small\item\em nedestruktivni \-L\-D\-U rozklad \end{DoxyCompactList}\item 
+subroutine, public \hyperlink{classsolvers_a0687ec293c240940e9a2cab9b9427c20}{\-L\-D\-Ud} (\-A, info, pivtype, ilev, perm1, perm2)
+\begin{DoxyCompactList}\small\item\em destruktivni \-L\-D\-U rozklad \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+resice soustav 
+
+\-Definition at line 7 of file solvers.\-f90.
+
+
+
+\subsection{\-Member \-Function/\-Subroutine \-Documentation}
+\hypertarget{classsolvers_ac4fcdb5ec5f18bb84b27408c36aafc21}{\index{solvers@{solvers}!jacobi@{jacobi}}
+\index{jacobi@{jacobi}!solvers@{solvers}}
+\subsubsection[{jacobi}]{\setlength{\rightskip}{0pt plus 5cm}subroutine, public {\bf solvers\-::jacobi} (
+\begin{DoxyParamCaption}
+\item[{class(matrix), intent(in)}]{a, }
+\item[{real(kind=rkind), dimension(\-:), intent(in)}]{b, }
+\item[{real(kind=rkind), dimension(\-:), intent(inout)}]{x, }
+\item[{integer(kind=ikind), intent(in)}]{maxit, }
+\item[{real(kind=rkind), intent(in)}]{reps, }
+\item[{integer(kind=ikind), intent(out)}]{it, }
+\item[{real(kind=rkind), intent(out)}]{repsfin, }
+\item[{real(kind=rkind), intent(out)}]{l1, }
+\item[{real(kind=rkind), intent(out)}]{l2, }
+\item[{type(tcount), intent(inout), optional}]{countop, }
+\item[{integer, intent(in), optional}]{ilev}
+\end{DoxyParamCaption}
+)}}\label{classsolvers_ac4fcdb5ec5f18bb84b27408c36aafc21}
+
+
+\-Jacobiova metoda. 
+
+\-Jde o iteracni postup $ x_{i+1} = x_i + M^{-1}*(b-A*x_i) $ kde $ M $ je diagonala matice $ A $ . \par
+ \-Oznacime-\/li residuum jako $ r_i = b-A*x_i $, pak $ reps = || r_i || / || r_0 || $ . 
+\begin{DoxyParams}[1]{\-Parameters}
+\mbox{\tt in}  & {\em a} & matice soustavy \\
+\hline
+\mbox{\tt in}  & {\em b} & prava strana \\
+\hline
+\mbox{\tt in,out}  & {\em x} & pocitane reseni soustavy \\
+\hline
+\mbox{\tt in}  & {\em maxit} & maximalni povoleny pocet iteraci \\
+\hline
+\mbox{\tt in}  & {\em reps} & pozadovane relativni residuum \\
+\hline
+\mbox{\tt out}  & {\em it} & skutecny pocet iteraci \\
+\hline
+\mbox{\tt out}  & {\em repsfin} & skutecne relativni residuum \\
+\hline
+\mbox{\tt out}  & {\em l1} & odhad rychlosti konvergence pomoci mocninne metody \\
+\hline
+\mbox{\tt out}  & {\em l2} & odhad rychlosti konvergence pomoci odmocniny \\
+\hline
+\mbox{\tt in,out}  & {\em countop} & pocitadlo operaci \\
+\hline
+\mbox{\tt in}  & {\em ilev} & podrobnost informaci \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 21 of file solvers.\-f90.
+
+\hypertarget{classsolvers_ac87ce7bf939f58b74022c83ebf735650}{\index{solvers@{solvers}!\-L\-D\-U@{\-L\-D\-U}}
+\index{\-L\-D\-U@{\-L\-D\-U}!solvers@{solvers}}
+\subsubsection[{\-L\-D\-U}]{\setlength{\rightskip}{0pt plus 5cm}subroutine, public {\bf solvers\-::\-L\-D\-U} (
+\begin{DoxyParamCaption}
+\item[{class(matrix), intent(in)}]{\-A, }
+\item[{class(matrix), intent(inout)}]{\-L\-U, }
+\item[{type(tcount), intent(inout), optional}]{info, }
+\item[{integer, intent(in), optional}]{pivtype, }
+\item[{integer, intent(in), optional}]{ilev, }
+\item[{integer(kind=ikind), dimension(\-:), intent(inout), optional, allocatable}]{perm1, }
+\item[{integer(kind=ikind), dimension(\-:), intent(inout), optional, allocatable}]{perm2}
+\end{DoxyParamCaption}
+)}}\label{classsolvers_ac87ce7bf939f58b74022c83ebf735650}
+
+
+nedestruktivni \-L\-D\-U rozklad 
+
+pro volbu pivota plati nasledujici pravidla\par
+ 0 ... zadna\par
+ 1 ... uplny vyber hlavniho prvku (nutne obe permutace )\par
+ 2 ... sloupcovy vyber hlavniho prvku(nutno perm1)\par
+ 3 ... radkovy vyber hlavniho prvku(nutno perm2)\par
+ 4 ... diagonalni vyber hlavniho prvku(nutno aspon jedna = obe shodne)\par
+ 5 ... diagonalni vyber hlavniho prvku pro minimal degree\par
+ (nutno aspon jedna = obe shodne) \par
+ 6 ... rid se predepsanou permutaci\par
+ \-Pro situace 1 az 6 musi byt pritomny permutacni vektory\par
+ \-Pokud nejsou pozadavky splneny -\/ zvoli se nejpodobnejsi volba\par
+
+
+pro podrobnost informaci plati\par
+ 0 ... tichy chod\par
+ 1 ... super podrobne\par
+ 
+\begin{DoxyParams}[1]{\-Parameters}
+\mbox{\tt in}  & {\em \-A} & rozkladana matice \\
+\hline
+\mbox{\tt in,out}  & {\em \-L\-U} & rozlozena matice \\
+\hline
+\mbox{\tt in,out}  & {\em info} & pocty operaci \\
+\hline
+\mbox{\tt in}  & {\em pivtype} & typ pivotaze \\
+\hline
+\mbox{\tt in}  & {\em ilev} & podrobnost informaci \\
+\hline
+\mbox{\tt in,out}  & {\em perm1} & permutace pro i \\
+\hline
+\mbox{\tt in,out}  & {\em perm2} & permutace pro j \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 111 of file solvers.\-f90.
+
+\hypertarget{classsolvers_a0687ec293c240940e9a2cab9b9427c20}{\index{solvers@{solvers}!\-L\-D\-Ud@{\-L\-D\-Ud}}
+\index{\-L\-D\-Ud@{\-L\-D\-Ud}!solvers@{solvers}}
+\subsubsection[{\-L\-D\-Ud}]{\setlength{\rightskip}{0pt plus 5cm}subroutine, public {\bf solvers\-::\-L\-D\-Ud} (
+\begin{DoxyParamCaption}
+\item[{class(matrix), intent(inout)}]{\-A, }
+\item[{type(tcount), intent(inout), optional}]{info, }
+\item[{integer, intent(in), optional}]{pivtype, }
+\item[{integer, intent(in), optional}]{ilev, }
+\item[{integer(kind=ikind), dimension(\-:), intent(inout), optional, allocatable}]{perm1, }
+\item[{integer(kind=ikind), dimension(\-:), intent(inout), optional, allocatable}]{perm2}
+\end{DoxyParamCaption}
+)}}\label{classsolvers_a0687ec293c240940e9a2cab9b9427c20}
+
+
+destruktivni \-L\-D\-U rozklad 
+
+nahradi vstupni matici jejim \-L\-D\-U rozkladem \-A = \-L$\ast$\-D$\ast$\-U
+\begin{DoxyItemize}
+\item \-L ... dolni trojuhelnikova matice s jednickami na diagonale
+\item \-D ... diagonalni matice
+\item \-U ... horni trojuhelnikova matice s jednickami na diagonale 
+\begin{DoxyParams}[1]{\-Parameters}
+\mbox{\tt in,out}  & {\em \-A} & rozkladana matice, pote s rozkladem \\
+\hline
+\mbox{\tt in,out}  & {\em info} & pocty operaci \\
+\hline
+\mbox{\tt in}  & {\em pivtype} & typ pivotaze \\
+\hline
+\mbox{\tt in}  & {\em ilev} & podrobnost informaci \\
+\hline
+\mbox{\tt in,out}  & {\em perm1} & permutace pro i \\
+\hline
+\mbox{\tt in,out}  & {\em perm2} & permutace pro j \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
+
+\-Definition at line 176 of file solvers.\-f90.
+
+
+
+\-The documentation for this module was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{solvers_8f90}{solvers.\-f90}\end{DoxyCompactItemize}

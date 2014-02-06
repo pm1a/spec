@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="spec" />
+		<Option pch_mode="2" />
+		<Option compiler="gfortran" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/spec" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gfortran" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-pg" />
+					<Add option="-fcheck=bounds" />
+					<Add option="-fcheck=all" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/spec" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gfortran" />
+				<Compiler>
+					<Add option="-ffast-math" />
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-O3" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-fopenmp" />
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="-fopenmp" />
+		</Linker>
+		<Unit filename="1" />
+		<Unit filename="2" />
+		<Unit filename="3" />
+		<Unit filename="4" />
+		<Unit filename="5" />
+		<Unit filename="6" />
+		<Unit filename="7" />
+		<Unit filename="Makefile" />
+		<Unit filename="bvect" />
+		<Unit filename="datasetup.f90">
+			<Option weight="2" />
+		</Unit>
+		<Unit filename="fullmatrix.f90">
+			<Option weight="2" />
+		</Unit>
+		<Unit filename="iotools.f90">
+			<Option weight="2" />
+		</Unit>
+		<Unit filename="matice" />
+		<Unit filename="mtx.f90">
+			<Option weight="1" />
+		</Unit>
+		<Unit filename="mtxtester.f90">
+			<Option weight="3" />
+		</Unit>
+		<Unit filename="pmamain.f90">
+			<Option weight="4" />
+		</Unit>
+		<Unit filename="pmatools.f90">
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="solvers.f90">
+			<Option weight="2" />
+		</Unit>
+		<Unit filename="sparsematrix.f90">
+			<Option weight="2" />
+		</Unit>
+		<Unit filename="typy.f90">
+			<Option weight="0" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project project_number="0.1" />
+				<doxyfile_build extract_all="1" extract_private="1" extract_static="1" />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot class_diagrams="1" have_dot="1" />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

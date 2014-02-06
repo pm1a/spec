@@ -1,0 +1,325 @@
+\hypertarget{structmtx_1_1matrix}{\section{mtx\-:\-:matrix \-Type \-Reference}
+\label{structmtx_1_1matrix}\index{mtx\-::matrix@{mtx\-::matrix}}
+}
+
+
+obecna matice  
+
+
+
+
+\-Inheritance diagram for mtx\-:\-:matrix\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{structmtx_1_1matrix__inherit__graph}
+\end{center}
+\end{figure}
+
+
+\-Collaboration diagram for mtx\-:\-:matrix\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{structmtx_1_1matrix__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+procedure, non\-\_\-overridable \hyperlink{structmtx_1_1matrix_ad43a73f32b347da18f997ce145d6c27c}{getn} =$>$ \hyperlink{classmtx_ab05f486a31448c69570e2144b4010957}{getnmatrix}
+\begin{DoxyCompactList}\small\item\em vrati pocet radku \end{DoxyCompactList}\item 
+procedure, non\-\_\-overridable \hyperlink{structmtx_1_1matrix_a24f1071ad0cb83094ba23d3027321392}{getm} =$>$ \hyperlink{classmtx_adf266f7c4ef90f6ddc1c654bcad5d149}{getmmatrix}
+\begin{DoxyCompactList}\small\item\em vrati pocet sloupcu \end{DoxyCompactList}\item 
+procedure(\hyperlink{interfacemtx_1_1ini}{ini}), deferred \hyperlink{structmtx_1_1matrix_a93ca8f74b8962073bdde2cf422abd191}{init}
+\begin{DoxyCompactList}\small\item\em inicializace matice \end{DoxyCompactList}\item 
+procedure(\hyperlink{interfacemtx_1_1geti}{geti}), deferred \hyperlink{structmtx_1_1matrix_aefbbd3d12a8d6429c183bec463749bda}{get}
+\begin{DoxyCompactList}\small\item\em vrati prvek matice \end{DoxyCompactList}\item 
+procedure(\hyperlink{interfacemtx_1_1seti}{seti}), deferred, pass \hyperlink{structmtx_1_1matrix_a64b6c3a20c2e85dc715f8cd2f70d6e18}{set}
+\begin{DoxyCompactList}\small\item\em nastavi prvek matice \end{DoxyCompactList}\item 
+procedure \hyperlink{structmtx_1_1matrix_a99c4dff8cf1c63a968d03474084d0b70}{getrow} =$>$ \hyperlink{classmtx_a46e5fd9002257990ea5c79e1971c8167}{getrowmatrix}
+\begin{DoxyCompactList}\small\item\em vybere radek z matice \end{DoxyCompactList}\item 
+procedure \hyperlink{structmtx_1_1matrix_af9d60c003f797c73085241d8c38ea792}{getcol} =$>$ \hyperlink{classmtx_abb68e8d5a8216a50b88e5c577b5ad403}{getcolmatrix}
+\begin{DoxyCompactList}\small\item\em vybere sloupec z matice \end{DoxyCompactList}\item 
+procedure \hyperlink{structmtx_1_1matrix_a4b7b05cc668bbeffed54335122063a03}{print} =$>$ \hyperlink{classmtx_a9b242fed3892da977edee5be16d85bdf}{printmatrix}
+\begin{DoxyCompactList}\small\item\em vytiskne matici \end{DoxyCompactList}\item 
+procedure \hyperlink{structmtx_1_1matrix_a1eacf25c7fa77ff8766a1ab281f50f19}{dump} =$>$ \hyperlink{classmtx_ae8163b304193b3e31cc36e31113ec9e9}{dumpmatrix}
+\begin{DoxyCompactList}\small\item\em dumpne celou strukturu matice \end{DoxyCompactList}\item 
+procedure \hyperlink{structmtx_1_1matrix_a085ae99f3dbc3a44fc4eba9471827fd9}{nonzero} =$>$ \hyperlink{classmtx_aac2e9af9cc01d6d2e4c305eb6ba95b7c}{nzmatrix}
+\begin{DoxyCompactList}\small\item\em da pocet nenul v matici \end{DoxyCompactList}\item 
+procedure, non\-\_\-overridable \hyperlink{structmtx_1_1matrix_a244598586f2b4d2de61eb827c6349485}{spy} =$>$ \hyperlink{classmtx_afba151bbf31e292a36f36279c0d74cf2}{spymatrix}
+\begin{DoxyCompactList}\small\item\em textova varianta spy \end{DoxyCompactList}\item 
+procedure \hyperlink{structmtx_1_1matrix_acb57be54454a5c1fad3429d8fab32b95}{mul} =$>$ \hyperlink{classmtx_a33216e985c0e2ec6536c2f013f8562ac}{mulmatrix}
+\begin{DoxyCompactList}\small\item\em nasobi vektorem \end{DoxyCompactList}\item 
+procedure \hyperlink{structmtx_1_1matrix_a54be9493d99d3be7246d31d46e21fd72}{copy} =$>$ \hyperlink{classmtx_add2b7c4a3a806aebca088907544db1e0}{copymatrix}
+\begin{DoxyCompactList}\small\item\em udela kopii matice \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Private \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+integer(kind=ikind), private \hyperlink{structmtx_1_1matrix_a548016c12d711ebbf9c748b9df0c68f8}{n} = 0
+\begin{DoxyCompactList}\small\item\em pocet radku \end{DoxyCompactList}\item 
+integer(kind=ikind), private \hyperlink{structmtx_1_1matrix_a832ec93e860493148fa67790e44cd594}{m} = 0
+\begin{DoxyCompactList}\small\item\em pocet sloupcu \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+obecna matice 
+
+\-Definition at line 13 of file mtx.\-f90.
+
+
+
+\subsection{\-Member \-Function/\-Subroutine \-Documentation}
+\hypertarget{structmtx_1_1matrix_a54be9493d99d3be7246d31d46e21fd72}{\index{mtx\-::matrix@{mtx\-::matrix}!copy@{copy}}
+\index{copy@{copy}!mtx::matrix@{mtx\-::matrix}}
+\subsubsection[{copy}]{\setlength{\rightskip}{0pt plus 5cm}procedure {\bf mtx\-::matrix\-::copy} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{structmtx_1_1matrix_a54be9493d99d3be7246d31d46e21fd72}
+
+
+udela kopii matice 
+
+
+
+\-Definition at line 44 of file mtx.\-f90.
+
+\hypertarget{structmtx_1_1matrix_a1eacf25c7fa77ff8766a1ab281f50f19}{\index{mtx\-::matrix@{mtx\-::matrix}!dump@{dump}}
+\index{dump@{dump}!mtx::matrix@{mtx\-::matrix}}
+\subsubsection[{dump}]{\setlength{\rightskip}{0pt plus 5cm}procedure {\bf mtx\-::matrix\-::dump} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{structmtx_1_1matrix_a1eacf25c7fa77ff8766a1ab281f50f19}
+
+
+dumpne celou strukturu matice 
+
+
+
+\-Reimplemented in \hyperlink{structmtx_1_1smtx_ac7863d852b3115cf545f7ed8356be3fc}{mtx\-::smtx}.
+
+
+
+\-Definition at line 36 of file mtx.\-f90.
+
+\hypertarget{structmtx_1_1matrix_aefbbd3d12a8d6429c183bec463749bda}{\index{mtx\-::matrix@{mtx\-::matrix}!get@{get}}
+\index{get@{get}!mtx::matrix@{mtx\-::matrix}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}procedure({\bf geti}), deferred {\bf mtx\-::matrix\-::get} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{structmtx_1_1matrix_aefbbd3d12a8d6429c183bec463749bda}
+
+
+vrati prvek matice 
+
+
+
+\-Reimplemented in \hyperlink{structmtx_1_1fullmtx_a2155f93b9fceea289c90e7f01fb505a7}{mtx\-::fullmtx}, and \hyperlink{structmtx_1_1smtx_ad099bd73ffe67c9c01ac973e0cbccf8a}{mtx\-::smtx}.
+
+
+
+\-Definition at line 26 of file mtx.\-f90.
+
+\hypertarget{structmtx_1_1matrix_af9d60c003f797c73085241d8c38ea792}{\index{mtx\-::matrix@{mtx\-::matrix}!getcol@{getcol}}
+\index{getcol@{getcol}!mtx::matrix@{mtx\-::matrix}}
+\subsubsection[{getcol}]{\setlength{\rightskip}{0pt plus 5cm}procedure {\bf mtx\-::matrix\-::getcol} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{structmtx_1_1matrix_af9d60c003f797c73085241d8c38ea792}
+
+
+vybere sloupec z matice 
+
+
+
+\-Definition at line 32 of file mtx.\-f90.
+
+\hypertarget{structmtx_1_1matrix_a24f1071ad0cb83094ba23d3027321392}{\index{mtx\-::matrix@{mtx\-::matrix}!getm@{getm}}
+\index{getm@{getm}!mtx::matrix@{mtx\-::matrix}}
+\subsubsection[{getm}]{\setlength{\rightskip}{0pt plus 5cm}procedure, non\-\_\-overridable {\bf mtx\-::matrix\-::getm} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{structmtx_1_1matrix_a24f1071ad0cb83094ba23d3027321392}
+
+
+vrati pocet sloupcu 
+
+
+
+\-Definition at line 22 of file mtx.\-f90.
+
+\hypertarget{structmtx_1_1matrix_ad43a73f32b347da18f997ce145d6c27c}{\index{mtx\-::matrix@{mtx\-::matrix}!getn@{getn}}
+\index{getn@{getn}!mtx::matrix@{mtx\-::matrix}}
+\subsubsection[{getn}]{\setlength{\rightskip}{0pt plus 5cm}procedure, non\-\_\-overridable {\bf mtx\-::matrix\-::getn} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{structmtx_1_1matrix_ad43a73f32b347da18f997ce145d6c27c}
+
+
+vrati pocet radku 
+
+
+
+\-Definition at line 20 of file mtx.\-f90.
+
+\hypertarget{structmtx_1_1matrix_a99c4dff8cf1c63a968d03474084d0b70}{\index{mtx\-::matrix@{mtx\-::matrix}!getrow@{getrow}}
+\index{getrow@{getrow}!mtx::matrix@{mtx\-::matrix}}
+\subsubsection[{getrow}]{\setlength{\rightskip}{0pt plus 5cm}procedure {\bf mtx\-::matrix\-::getrow} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{structmtx_1_1matrix_a99c4dff8cf1c63a968d03474084d0b70}
+
+
+vybere radek z matice 
+
+
+
+\-Definition at line 30 of file mtx.\-f90.
+
+\hypertarget{structmtx_1_1matrix_a93ca8f74b8962073bdde2cf422abd191}{\index{mtx\-::matrix@{mtx\-::matrix}!init@{init}}
+\index{init@{init}!mtx::matrix@{mtx\-::matrix}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}procedure({\bf ini}), deferred {\bf mtx\-::matrix\-::init} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{structmtx_1_1matrix_a93ca8f74b8962073bdde2cf422abd191}
+
+
+inicializace matice 
+
+
+
+\-Reimplemented in \hyperlink{structmtx_1_1fullmtx_a61b753f6a76bcfd96fbe82c26bbdce8b}{mtx\-::fullmtx}, and \hyperlink{structmtx_1_1smtx_aad1907a959bc0080ac4b364d6b2a17af}{mtx\-::smtx}.
+
+
+
+\-Definition at line 24 of file mtx.\-f90.
+
+\hypertarget{structmtx_1_1matrix_acb57be54454a5c1fad3429d8fab32b95}{\index{mtx\-::matrix@{mtx\-::matrix}!mul@{mul}}
+\index{mul@{mul}!mtx::matrix@{mtx\-::matrix}}
+\subsubsection[{mul}]{\setlength{\rightskip}{0pt plus 5cm}procedure {\bf mtx\-::matrix\-::mul} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{structmtx_1_1matrix_acb57be54454a5c1fad3429d8fab32b95}
+
+
+nasobi vektorem 
+
+
+
+\-Reimplemented in \hyperlink{structmtx_1_1smtx_a799fca1825561095bdb5a3342fb88a21}{mtx\-::smtx}.
+
+
+
+\-Definition at line 42 of file mtx.\-f90.
+
+\hypertarget{structmtx_1_1matrix_a085ae99f3dbc3a44fc4eba9471827fd9}{\index{mtx\-::matrix@{mtx\-::matrix}!nonzero@{nonzero}}
+\index{nonzero@{nonzero}!mtx::matrix@{mtx\-::matrix}}
+\subsubsection[{nonzero}]{\setlength{\rightskip}{0pt plus 5cm}procedure {\bf mtx\-::matrix\-::nonzero} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{structmtx_1_1matrix_a085ae99f3dbc3a44fc4eba9471827fd9}
+
+
+da pocet nenul v matici 
+
+
+
+\-Reimplemented in \hyperlink{structmtx_1_1smtx_a6f111e4bbdebc5c728e9064be2164b65}{mtx\-::smtx}.
+
+
+
+\-Definition at line 38 of file mtx.\-f90.
+
+\hypertarget{structmtx_1_1matrix_a4b7b05cc668bbeffed54335122063a03}{\index{mtx\-::matrix@{mtx\-::matrix}!print@{print}}
+\index{print@{print}!mtx::matrix@{mtx\-::matrix}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}procedure {\bf mtx\-::matrix\-::print} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{structmtx_1_1matrix_a4b7b05cc668bbeffed54335122063a03}
+
+
+vytiskne matici 
+
+
+
+\-Reimplemented in \hyperlink{structmtx_1_1smtx_a3977bc695c6286962667d92261ee7ac2}{mtx\-::smtx}.
+
+
+
+\-Definition at line 34 of file mtx.\-f90.
+
+\hypertarget{structmtx_1_1matrix_a64b6c3a20c2e85dc715f8cd2f70d6e18}{\index{mtx\-::matrix@{mtx\-::matrix}!set@{set}}
+\index{set@{set}!mtx::matrix@{mtx\-::matrix}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}procedure({\bf seti}), deferred, pass {\bf mtx\-::matrix\-::set} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{structmtx_1_1matrix_a64b6c3a20c2e85dc715f8cd2f70d6e18}
+
+
+nastavi prvek matice 
+
+
+
+\-Reimplemented in \hyperlink{structmtx_1_1fullmtx_ac28edc8d06a554863016c1e369d218c4}{mtx\-::fullmtx}, and \hyperlink{structmtx_1_1smtx_a7cd1a50472a77e6b3894c633e676bd35}{mtx\-::smtx}.
+
+
+
+\-Definition at line 28 of file mtx.\-f90.
+
+\hypertarget{structmtx_1_1matrix_a244598586f2b4d2de61eb827c6349485}{\index{mtx\-::matrix@{mtx\-::matrix}!spy@{spy}}
+\index{spy@{spy}!mtx::matrix@{mtx\-::matrix}}
+\subsubsection[{spy}]{\setlength{\rightskip}{0pt plus 5cm}procedure, non\-\_\-overridable {\bf mtx\-::matrix\-::spy} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{structmtx_1_1matrix_a244598586f2b4d2de61eb827c6349485}
+
+
+textova varianta spy 
+
+
+
+\-Definition at line 40 of file mtx.\-f90.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{structmtx_1_1matrix_a832ec93e860493148fa67790e44cd594}{\index{mtx\-::matrix@{mtx\-::matrix}!m@{m}}
+\index{m@{m}!mtx::matrix@{mtx\-::matrix}}
+\subsubsection[{m}]{\setlength{\rightskip}{0pt plus 5cm}integer(kind=ikind), private {\bf mtx\-::matrix\-::m} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{structmtx_1_1matrix_a832ec93e860493148fa67790e44cd594}
+
+
+pocet sloupcu 
+
+
+
+\-Definition at line 17 of file mtx.\-f90.
+
+\hypertarget{structmtx_1_1matrix_a548016c12d711ebbf9c748b9df0c68f8}{\index{mtx\-::matrix@{mtx\-::matrix}!n@{n}}
+\index{n@{n}!mtx::matrix@{mtx\-::matrix}}
+\subsubsection[{n}]{\setlength{\rightskip}{0pt plus 5cm}integer(kind=ikind), private {\bf mtx\-::matrix\-::n} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{structmtx_1_1matrix_a548016c12d711ebbf9c748b9df0c68f8}
+
+
+pocet radku 
+
+
+
+\-Definition at line 15 of file mtx.\-f90.
+
+
+
+\-The documentation for this type was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mtx_8f90}{mtx.\-f90}\end{DoxyCompactItemize}

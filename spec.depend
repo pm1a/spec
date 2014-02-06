@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1380299737 source:/home/pmayer/Ubuntu One/fortran/spec/main.f90
+
+1380271996 source:/home/pmayer/Ubuntu One/fortran/spec/typy.f90
+
+1383550376 source:/home/pmayer/Ubuntu One/fortran/spec/mtx.f90
+
+1383075311 source:/home/pmayer/Ubuntu One/fortran/spec/datasetup.f90
+
+1383510126 source:/home/pmayer/Ubuntu One/fortran/spec/solvers.f90
+
+1383040011 source:/home/pmayer/Ubuntu One/fortran/spec/fullmatrix.f90
+
+1382342546 source:/home/pmayer/Ubuntu One/fortran/spec/sparsematrix.f90
+
+1380303615 source:/home/pmayer/Ubuntu One/fortran/spec/pmatools.f90
+
+1381184654 source:/home/pmayer/Ubuntu One/fortran/spec/iotools.f90
+
+1383499967 source:/home/pmayer/Ubuntu One/fortran/spec/pmamain.f90
+
+1383546834 source:/home/pmayer/Ubuntu One/fortran/spec/mtxtester.f90
+
