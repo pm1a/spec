@@ -1,5 +1,0 @@
-\form#0:$ x_{i+1} = x_i + M^{-1}*(b-A*x_i) $
-\form#1:$ M $
-\form#2:$ A $
-\form#3:$ r_i = b-A*x_i $
-\form#4:$ reps = || r_i || / || r_0 || $
